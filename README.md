@@ -1,40 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+<a href="https://www.logo-creator.io">
+  <img alt="AI Logo Generator" src="./public/og-image.png">
+  <h1 align="center">AI Logo Generator</h1>
+</a>
 
-## Getting Started
+<p align="center">
+  An open source logo generator – create professional logos in seconds with customizable styles.
+</p>
 
-First, run the development server:
+## Tech stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Flux Pro 1.1](https://togetherai.link/flux-playground) on [Together AI](https://togetherai.link/) for logo generation
+- [Next.js](https://nextjs.org/) with TypeScript for the app framework
+- [Shadcn](https://ui.shadcn.com/) for UI components & [Tailwind](https://tailwindcss.com/) for styling
+- [Upstash Redis](https://upstash.com/) for rate limiting
+- [Clerk](https://clerk.com/) for authentication
+- [Plausible](https://plausible.io/) & [Helicone](https://helicone.ai/) for analytics & observability
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Cloning & running
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. Clone the repo: `git clone https://github.com/Nutlope/logocreator`
+2. Create a `.env` file and add your [Together AI API key](https://api.together.xyz/settings/api-keys): `TOGETHER_API_KEY=`
+3. Run `npm install` and `npm run dev` to install dependencies and run locally.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Future Tasks
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- [ ] Create a dashboard with a user's logo history
+- [ ] Support SVG exports instead of just PNG
+- [ ] Add support for additional styles
+- [ ] Add a dropdown for image size (can do up to 1440x1440)
+- [ ] Show approximate price when using your own Together AI key
+- [ ] Allow the ability to upload a reference logo (use vision model to read it)
+- [ ] Redesign popular brand’s logos with my logo maker and have it in a showcase
