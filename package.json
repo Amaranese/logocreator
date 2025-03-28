@@ -30,7 +30,8 @@
     "shadcn": "^2.4.0-canary.17",
     "shadcn-ui": "^0.9.5",
     "tailwind-merge": "^3.0.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "together-ai": "^0.13.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
