@@ -27,7 +27,8 @@
     "next-plausible": "^3.12.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "shadcn": "^2.4.0-canary.17"
+    "shadcn": "^2.4.0-canary.17",
+    "shadcn-ui": "^0.9.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
